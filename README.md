@@ -1,0 +1,1 @@
+This project is a waste management website where everyone can get information about how to recycle your waste.

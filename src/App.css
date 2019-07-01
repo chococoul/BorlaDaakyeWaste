@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla:400,700&display=swap');
+
+:root{
+  --mainGreen:#419644;
+  --lightGreen:#91cb3e;
+  --mainWhite:#fdfdfa;
+  --mainDark:#191716;
+  --mainYellow:#e9ce2c;
+}
+
+
+body{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Frank Ruhl Libre','Karla', sans-serif, serif;
+
+  /* font-family: 'PT Sans Narrow', sans-serif; */
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+  background:transparent;
+  padding-top: 65px; 
+
+}
+.navbar-brand{
+  color: var(--mainWhite)!important;
+}
+.navbar{
+  background:#3c8a2e;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+  
+}
+.navbar .dropdown-menu  {
+  background:#3c8a2e;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+  
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+  background: #e9ce2c;
+}
+.navbar .navbar-nav li a{
+  color: var(--mainWhite)!important;
+}
+.text-title{
+  font-family: 'Heebo', 'Anton';
+  letter-spacing: 0.3rem;
+  /* color: #fff; */
+  
+}
+
+
+.dont-title {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+ }
+ .dont-title h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: limegreen;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes example1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+  aside {
+    width: 40%;
+    background-color: var(--mainWhite);
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color:var(--lightGreen) !important;
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+.map-container-6{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-6 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+
+.myCarousel img {
+
+  width: auto;
+  
+  height: 225px;
+  
+  max-height: 225px;
+  
+  }
+  .contact{
+    background: transparent;
+  }
+  .services{
+    text-align: center;
+  }
+  .services span{
+    padding: 10px 20px 10px 20px;
+    /* text-align: center; */
+    color: #3c8a2e;
+    font-weight: 700;
+}
+.services hr{
+    border-width: 2px;
+    margin-top: 8px;
+}
+.partners span{
+  padding: 10px 20px 10px 20px;
+  /* text-align: center; */
+  color: #3c8a2e;
+}
+.partners hr{
+  border-width: 2px;
+  margin-top: 8px;
+}
+
+.dos .donts{
+  background: linear-gradient(297deg, #d0e8e2, #dbece1);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 35s ease infinite;
+-moz-animation: AnimationName 35s ease infinite;
+-o-animation: AnimationName 35s ease infinite;
+animation: AnimationName 35s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+.dos h4{
+  color: #3c8a2e;
+  font-weight: bold;
+}
+.blink {
+  font-weight: bold;
+  color: #e9ce2c;
+  animation: blinker ;
+}
+
+@keyframes blinker {  
+  60% { opacity: 0; }
+}
+.full-container{
+  margin-top: 2%;
+}
+footer{
+  /* bottom: 2; */
+  width: 100%;
+  height: 2.7rem;
+  margin-top: 20px;
+  background:#3c8a2e !important;
+  background-image:none;
+  color: var(--mainWhite) !important;
+}
+footer ul >li{
+ /* top: 20px; */
+
+ /* font-weight: 400; */
+  list-style: none;
+  display: inline; 
+  padding: 20px;
+
+ 
+}
+footer ul >li>a{
+  font-size: 1.0rem;
+  display: inline-block;
+	text-decoration: none;
+  padding: 7px;
+  font-weight: 700;
+  color: #e9ce2c !important;
+}
+footer ul >li a :hover{
+  background:var(--mainWhite);
+  /* color: #e9ce2c; */
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  width: 200px; /* You can set the dimensions to whatever you want */
+  height: 200px;
+  object-fit: cover;
+}
+.features .card {
+  min-height: 200px;
+}
+figure {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
