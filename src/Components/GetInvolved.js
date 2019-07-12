@@ -82,20 +82,20 @@ export default class GetInvolved extends Component {
                           
                               <i className="fas fa-user prefix grey-text"></i>
                               <label id="form-name">Your name</label> 
-                              <input type="text" id="form-name" name="name" onChange={this.onChange} value={this.state.name} className={`form-control ${ isValidName? '':'is-invalid' }`}/>
-                              { isValidName? null: <div className='invalid-feedback'>Name must be longer than 3 characters</div> }
+                              <input type="text" id="form-name" name="name" onChange={this.onChange} value={this.state.name} className={`form-control `}/>
+                              {/* { isValidName? null: <div className='invalid-feedback'>Name must be longer than 3 characters</div> } */}
                            </div>
 
                             <div className="md-form">
                               <i className="fas fa-envelope prefix grey-text"></i> <label id="form-email">Your email</label>
-                              <input type="text" id="form-email" name="email" onChange={this.onChange} value={this.state.email} onBlur={this.validateName} 
-                              className={`form-control ${ isValidEmail? '':'is-invalid' }`}/>
-                              { isValidEmail? null: <div className='invalid-feedback'>Email must be longer than 3 characters</div> }
+                              <input type="text" id="form-email" name="email" onChange={this.onChange} value={this.state.email} 
+                              className={`form-control `}/>
+                              {/* { isValidEmail? null: <div className='invalid-feedback'>Email must be longer than 3 characters</div> } */}
                             </div>
 
                               <div className="md-form">
                                 <i className="fas fa-tag prefix grey-text"></i> <label id="form-Subject">Subject</label>
-                                <input type="text" id="form-Subject" name="subject" onChange={this.onChange} value={this.state.subject} onBlur={this.validateEmail}
+                                <input type="text" id="form-Subject" name="subject" onChange={this.onChange} value={this.state.subject} 
                                 className="form-control"/>
                                 
                               </div>

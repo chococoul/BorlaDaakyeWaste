@@ -12,8 +12,7 @@ export default class Contact extends Component {
     
   onChange =(e)=>{
     this.setState ({[e.target.name]: e.target.value})
-    this.validateName();
-    this.validateEmail();
+    
 
 }
   
@@ -36,24 +35,23 @@ export default class Contact extends Component {
               `)
   
     };
-    validateName = () => {
-      const { name } = this.state;
-      this.setState({
-        nameError:
-          name.length > 3 ? null : 'Name must be longer than 3 characters'
-      });
-    }
+    // validateName = () => {
+    //   const { name } = this.state;
+    //   this.setState({
+    //     nameError:
+    //       name.length > 3 ? null : 'Name must be longer than 3 characters'
+    //   });
+    // }
     
-    validateEmail = () => {
-      const { email } = this.state;
-      this.setState({
-        emailError:
-          email.length > 3 ? null : 'Email must be longer than 3 characters'
-      });
-    }
+    // validateEmail = () => {
+    //   const { email } = this.state;
+    //   this.setState({
+    //     emailError:
+    //       email.length > 3 ? null : 'Email must be longer than 3 characters'
+    //   });
+    // }
     render() {
-      const isValidName = this.state.name.length > 3;
-  const isValidEmail = this.state.email.length > 3;
+     
         return (
             <div className="contact">
               <div className="container my-3">
@@ -162,16 +160,16 @@ export default class Contact extends Component {
                         <form onSubmit={this.onSubmit } method='post'>
                           <div className="md-form" >
                               <i className="fas fa-user prefix grey-text"></i>
-                              <input type="text" id="form-name" name="name" onChange={this.onChange} value={this.state.name} className={`form-control ${ isValidName? '':'is-invalid' }`}/>
-                              { isValidName? null: <div className='invalid-feedback'>Name must be longer than 3 characters</div> }
+                              <input type="text" id="form-name" name="name" onChange={this.onChange} value={this.state.name} className={`form-control `}/>
+                              {/* { isValidName? null: <div className='invalid-feedback'>Name must be longer than 3 characters</div> } */}
                               <label id="form-name">Your name</label>
                            </div>
 
                             <div className="md-form">
                               <i className="fas fa-envelope prefix grey-text"></i>
-                              <input type="text" id="form-email" name="email" onChange={this.onChange} value={this.state.email} onBlur={this.validateName} 
-                              className={`form-control ${ isValidEmail? '':'is-invalid' }`}/>
-                              { isValidEmail? null: <div className='invalid-feedback'>Email must be longer than 3 characters</div> }
+                              <input type="text" id="form-email" name="email" onChange={this.onChange} value={this.state.email}  
+                              className={`form-control `}/>
+                              {/* { isValidEmail? null: <div className='invalid-feedback'>Email must be longer than 3 characters</div> } */}
                               <label id="form-email">Your email</label>
                             </div>                             
 
