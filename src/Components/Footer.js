@@ -4,7 +4,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div >
-                <footer className="page-footer  fixed-bottom  text-white text-center">
+                <footer className="page-footer  fixed-bottom bg-dark text-white text-center">
                <ul className=".list-unstyled d-inline  ">
                    <li className="ml-3 ">@2019 Borla Daakye Waste Management Ltd</li>
                    <li>

@@ -20,15 +20,72 @@ body{
   padding-top: 65px; 
 
 }
-.navbar-brand{
-  color: var(--mainWhite)!important;
-}
+.logo img {
+  width: 100% \9; /*Force IE10 and below to size SVG images correctly*/
+  max-width: 100%;
+  height: 68px;
+  }
+  
+  @media (max-width:480px) { 
+  .logo img {
+      width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 70% !important;
+  }
+  }
+  
+  @media (max-width:400px) { 
+  .logo img {
+      width: 75% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 75%;
+  }
+  }
+  
+  @media (max-width:385px) { 
+  .logo img {
+      width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 70%;
+  }
+  }
+  
+  @media (max-width:345px) { 
+  .logo img {
+      width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 65%;
+  }
+  }
+  
+  @media (max-width:335px) { 
+  .logo img {
+      width: 60% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 60%;
+  }
+  }
+  
+  @media (max-width:325px) { 
+  .logo img {
+      width: 55% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 55%;
+  }
+  }
+  
+  @media (max-width:315px) { 
+  .logo img {
+      width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+      max-width: 50%;
+  }
+  }
+
+
 .navbar{
-  background:#3c8a2e;
+  background:#111111;
   background-image:none;
   border-color:transparent;
   box-shadow:none;
+  color:#3c8a2e ;
   
+}
+.navbar ul>li Link{
+  color:#3c8a2e ;
 }
 .navbar .dropdown-menu  {
   background:#3c8a2e;
